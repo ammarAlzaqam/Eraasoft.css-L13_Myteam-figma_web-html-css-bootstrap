@@ -1,0 +1,213 @@
+/*//TODO>> 1-About hero sec */
+#about-hero-sec {
+  position: relative;
+  background-color: var(--green-400);
+  padding-block: clamp(112px, 14vw, 120px);
+  overflow-y: hidden;
+
+  @media (max-width: 575px) {
+    padding-block: 80px 108px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+    gap: 30px;
+
+    @media (max-width: 767px) {
+      gap: 24px;
+    }
+
+    @media (max-width: 575px) {
+      gap: 16px;
+    }
+
+    h1 {
+      width: 350px;
+      max-width: 100%;
+    }
+
+    .content {
+      width: 100%;
+      gap: 40px;
+
+      .dash {
+        background: var(--primary);
+        width: 50px;
+        height: 4px;
+      }
+      p {
+        @media (max-width: 767px) {
+          width: 457px;
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 575px) {
+      transform: translateY(50%);
+    }
+  }
+}
+
+/*//TODO>> 2-Meet */
+main {
+  position: relative;
+  background-color: var(--green-500);
+  padding-block: clamp(88px, 13vw, 140px) clamp(112px, 17vw, 168px);
+  overflow-y: hidden;
+
+  .container {
+    position: relative;
+    z-index: 10;
+    .row {
+      > .wrapper:nth-child(-n + 3) .box {
+        @media (min-width: 992px) {
+          margin-bottom: 28px;
+        }
+
+        @media (max-width: 767px) {
+          margin-bottom: 28px;
+        }
+
+        @media (max-width: 575px) {
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .box {
+      background-color: var(--green-800);
+      height: 253px;
+      padding-inline: 24px;
+
+      > img {
+        width: 96px;
+        border-radius: 50%;
+        border: 2px solid #c4fffe;
+        margin-bottom: 1rem;
+      }
+
+      h6 {
+        color: var(--secondary);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      p {
+        font-style: italic;
+      }
+
+      .add-wrapper {
+        background-color: var(--primary);
+        width: 56px;
+        height: 56px;
+        padding: 20px;
+        border-radius: 50%;
+        transform: translateY(50%);
+      }
+    }
+
+    .box-last {
+      background-color: var(--green-900);
+      height: 253px;
+      padding-inline: 16px;
+
+      h6 {
+        color: var(--secondary);
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+      }
+
+      p {
+        width: 254px;
+        max-width: 100%;
+
+        @media (max-width: 767px) {
+          width: 234.6px;
+        }
+      }
+
+      .cancel-wrapper {
+        background-color: var(--secondary);
+        width: 56px;
+        height: 56px;
+        padding: 20px;
+        border-radius: 50%;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  > img:first-of-type {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 575px) {
+      transform: translateY(-50%);
+    }
+  }
+
+  > img:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/*//TODO>> 3-Clients */
+#clients {
+  position: relative;
+  background-color: var(--green-800);
+  padding-block: clamp(88px, 13vw, 140px);
+  overflow: hidden;
+
+  .container {
+    position: relative;
+    z-index: 10;
+    .content {
+      img {
+        max-width: 100%;
+
+        @media (min-width: 768px) and (max-width: 1999px) {
+          max-width: calc(20% - 1.8rem);
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+          max-width: calc(20% - 1.2rem);
+        }
+
+        @media (max-width: 575px) {
+          margin-bottom: 9px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @media (max-width: 767px) {
+      transform: translateY(-50%);
+    }
+
+    @media (max-width: 575px) {
+      transform: translate(-50%, -50%);
+    }
+  }
+}

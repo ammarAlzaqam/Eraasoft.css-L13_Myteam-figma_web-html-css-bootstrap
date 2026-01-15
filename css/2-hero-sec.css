@@ -9,10 +9,6 @@
     padding-block: clamp(80px, 15vw, 129px) clamp(197px, 33vw, 250px);
 
     h1 {
-      font-weight: 700;
-      font-size: clamp(40px, 9vw, 100px);
-      line-height: clamp(40px, 9vw, 100px);
-
       span {
         color: var(--primary);
       }
@@ -27,9 +23,6 @@
 
       p {
         max-width: 440px;
-        font-weight: 600;
-        font-size: clamp(15px, 1.8vw, 18px);
-        line-height: 28px;
 
         @media (max-width: 767px) {
           max-width: 457px;

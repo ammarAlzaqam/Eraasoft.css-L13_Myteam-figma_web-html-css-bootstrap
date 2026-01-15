@@ -53,6 +53,10 @@ a {
   @media (min-width: 1400px) {
     max-width: 1134px;
   }
+
+  @media (max-width: 575px) {
+    padding-inline: 24px;
+  }
 }
 
 .btn {
@@ -83,6 +87,17 @@ a {
   }
 }
 
+.head-text {
+  font-weight: 700;
+  font-size: clamp(40px, 8vw, 64px);
+  line-height: clamp(40px, 8vw, 64px);
+
+  &.hero {
+    font-size: clamp(40px, 9vw, 100px);
+    line-height: clamp(40px, 9vw, 100px);
+  }
+}
+
 .title {
   font-weight: 700;
   font-size: clamp(32px, 4vw, 48px);
@@ -91,6 +106,12 @@ a {
   &.dark {
     color: var(--green-800);
   }
+}
+
+.sub-title {
+  font-weight: 600;
+  font-size: clamp(15px, 1.8vw, 18px);
+  line-height: 28px;
 }
 
 .des {
