@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap");
+
+@import url("./css/1-header.css");
+@import url("./css/2-hero-sec.css");
+@import url("./css/3-build.css");
+@import url("./css/4-stories.css");
+@import url("./css/5-get-started.css");
+@import url("./css/6-footer.css");
+
+:root {
+  --primary: #f67e7e;
+  --secondary: #79c8c7;
+
+  --green-400: #014e56;
+  --green-500: #004047;
+  --green-800: #012f34;
+  --green-900: #002529;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+  color: white;
+  font-family: "Livvic", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  @media (min-width: 1400px) {
+    max-width: 1134px;
+  }
+}
+
+.btn {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 30px;
+
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 10px 32px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: white;
+    color: var(--green-900);
+  }
+
+  &.dark {
+    color: var(--green-800);
+    border-color: var(--green-800);
+
+    &:hover {
+      background-color: var(--green-800);
+      color: white;
+    }
+  }
+}
+
+.title {
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: clamp(32px, 4vw, 48px);
+
+  &.dark {
+    color: var(--green-800);
+  }
+}
+
+.des {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+}

@@ -1,0 +1,58 @@
+#hero-sec {
+  position: relative;
+
+  background: var(--green-400);
+
+  .container {
+    position: relative;
+    z-index: 10;
+    padding-block: clamp(80px, 15vw, 129px) clamp(197px, 33vw, 250px);
+
+    h1 {
+      font-weight: 700;
+      font-size: clamp(40px, 9vw, 100px);
+      line-height: clamp(40px, 9vw, 100px);
+
+      span {
+        color: var(--primary);
+      }
+    }
+
+    .right {
+      .dash-shape {
+        width: 50px;
+        height: 4px;
+        background: #79c8c7;
+      }
+
+      p {
+        max-width: 440px;
+        font-weight: 600;
+        font-size: clamp(15px, 1.8vw, 18px);
+        line-height: 28px;
+
+        @media (max-width: 767px) {
+          max-width: 457px;
+        }
+      }
+    }
+
+    img {
+      max-width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+
+      @media (max-width: 767px) {
+        right: 50%;
+        transform: translateX(50%);
+      }
+    }
+  }
+
+  > img {
+    position: absolute;
+    top: clamp(80px, 15vw, 129px);
+    left: 0;
+  }
+}

@@ -1,0 +1,29 @@
+#get-started {
+  position: relative;
+  background: var(--primary);
+  padding-block: 76px;
+  overflow-y: hidden;
+
+  @media (max-width: 575px) {
+    padding: 83px 10px;
+  }
+
+  .container {
+    position: relative;
+    z-index: 10;
+
+    @media (min-width: 992px) {
+      max-width: 917px;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    @media (max-width: 767px) {
+      bottom: -22px;
+    }
+  }
+}

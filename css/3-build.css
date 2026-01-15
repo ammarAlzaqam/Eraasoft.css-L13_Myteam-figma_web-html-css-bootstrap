@@ -1,0 +1,72 @@
+#build {
+  position: relative;
+  background-color: var(--green-800);
+  padding-block: clamp(64px, 15vw, 140px);
+
+  .container {
+    position: relative;
+    z-index: 10;
+
+    .left {
+      @media (min-width: 767px) {
+        margin-top: -60px;
+      }
+
+      div {
+        background-color: var(--primary);
+        width: 50px;
+        height: 4px;
+        margin-bottom: 54px;
+
+        @media (max-width: 767px) {
+          margin-bottom: 32px;
+        }
+      }
+
+      h2.title {
+        max-width: 440px;
+
+        @media (max-width: 575px) {
+          max-width: 240px;
+        }
+      }
+    }
+
+    .right {
+      gap: 32px;
+
+      @media (max-width: 575px) {
+        gap: 48px;
+      }
+
+      .box {
+        img {
+          width: 72px;
+        }
+
+        .content {
+          h4 {
+            color: #f67e7e;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 28px;
+          }
+
+          p {
+            color: rgba(255, 255, 255, 0.8);
+          }
+        }
+      }
+    }
+  }
+
+  > img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 767px) {
+        top: 0;
+    }
+  }
+}
