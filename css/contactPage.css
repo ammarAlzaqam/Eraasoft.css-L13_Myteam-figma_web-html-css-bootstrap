@@ -1,0 +1,77 @@
+#contact {
+  position: relative;
+  background-color: var(--green-400);
+  padding-block: clamp(80px, 13vw, 120px) clamp(88px, 13vw, 120px);
+  overflow-y: hidden;
+
+  .container {
+    position: relative;
+    z-index: 10;
+
+    .info {
+      width: 100%;
+      @media (min-width: 575px) and (max-width: 767px) {
+        width: 515px;
+        max-width: 95%;
+      }
+
+      h3 {
+        color: var(--primary);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+      }
+
+      p {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+
+    form {
+      .form-input {
+        background-color: transparent;
+        padding: 0 0 16px 14px;
+        border: none;
+        border-bottom: 1px solid white;
+
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: -0.12px;
+        transition: border 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: var(--secondary);
+        }
+
+        &::placeholder {
+          color: rgba(255, 255, 255, 0.6);
+        }
+
+        &.message {
+          resize: none;
+          padding: 0 0 8px 14px;
+        }
+      }
+    }
+  }
+
+  > img:first-of-type {
+    position: absolute;
+    top: clamp(80px, 13vw, 120px);
+    left: 0;
+  }
+
+  > img:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: 575px) {
+      transform: translateY(50%);
+    }
+  }
+}

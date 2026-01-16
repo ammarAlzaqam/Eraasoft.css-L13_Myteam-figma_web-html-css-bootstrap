@@ -112,6 +112,13 @@ main {
         padding: 20px;
         border-radius: 50%;
         transform: translateY(50%);
+
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          background-color: var(--secondary);
+        }
       }
     }
 
@@ -136,6 +143,17 @@ main {
         }
       }
 
+      > div:first-of-type {
+        img {
+          cursor: pointer;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.2);
+          }
+        }
+      }
+
       .cancel-wrapper {
         background-color: var(--secondary);
         width: 56px;
@@ -143,6 +161,12 @@ main {
         padding: 20px;
         border-radius: 50%;
         transform: translateY(50%);
+        cursor: pointer;
+        transition: all ease 0.3s;
+
+        &:hover {
+          background-color: var(--primary);
+        }
       }
     }
   }
